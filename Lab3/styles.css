@@ -1,0 +1,59 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header1{
+    margin: 0;
+    color:rgb(4, 4, 74);
+    padding-bottom: 5px;
+    text-align:center;
+}
+.paragraph1{
+    text-align: center;
+    font-size: 20px;
+    margin: 0; /* Removes margin around the paragraph element */
+    padding: 0; /* Removes padding inside the paragraph */
+}
+
+.header-section{
+    text-align: center; /* Center content inside the header section */
+    margin-bottom: 20px; /* Space below the header section */
+     /* Adds a border below the header section */
+    padding-bottom: 10px; /* Space between the content and the border */
+    padding-top: 30px;
+    position: relative;
+}
+.header-section::after {
+    content: ""; /* Required for pseudo-element */
+    display: block;
+    width: 85%; /* Adjust this value to set the length of the border */
+    height: 3px; /* Border thickness */
+    background-color: #090808; /* Border color */
+    position: absolute;
+    bottom: 0; /* Align it to the bottom of the header-section */
+    left: 50%; /* Center the border horizontally */
+    transform: translateX(-50%); /* Center it relative to the left position */
+}
+.section1{
+    padding-left: 100px;
+}
+.header2{
+     /* Space below the header section */
+     margin-bottom: 0px;
+   padding-bottom: 6px; /* Space between the content and the border */
+   position: relative;
+   font-size: 20px;
+}
+.header2::after{
+    content: ""; /* Required for pseudo-element */
+    display: block;
+    width: 92%; /* Adjust this value to set the length of the border */
+    height: 4px; /* Border thickness */
+    background-color: #6d6a6a; /* Border color */
+    position: absolute;
+    bottom: 0; /* Align it to the bottom of the header-section */
+    
+}
+ .list1{
+    margin-top: 10px;
+    font-size: 20px;
+ }
