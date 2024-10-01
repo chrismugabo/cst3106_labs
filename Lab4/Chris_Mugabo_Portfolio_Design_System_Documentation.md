@@ -62,6 +62,8 @@ The website uses the **Poppins** font family throughout the design to maintain a
    - The **Education** and **Work Experience** sections include details about my academic background and job roles, with the dates right-aligned for easy scanning.
    - **Mock-up Screenshot**:
      ![Content Section Mock-up](images/content-mockup.png)
+     ![Content Section Mock-up](images/content1-mockup.png)
+      
 
 ### 4. **Footer**
    - The footer includes a link to my [LinkedIn Profile](https://www.linkedin.com/in/chris-mugabo/) and copyright information.
