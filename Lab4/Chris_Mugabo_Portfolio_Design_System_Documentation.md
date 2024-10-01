@@ -46,19 +46,27 @@ The website uses the **Poppins** font family throughout the design to maintain a
    - The header includes my name, address, email, and phone number.
    - The background color is dark gray, with white text for better contrast.
    - All content is centered for a balanced and organized look.
+   - **Mock-up Screenshot**:
+     ![Header Mock-up](images/header-mockup.png)
 
 ### 2. **Navigation Bar**
    - The navigation bar contains links to important sections like Summary, Skills, Education, and Experience.
    - It has a dark gray background and white text for easy visibility.
    - Links change style on hover to enhance user interaction.
+   - **Mock-up Screenshot**:
+     ![Navigation Mock-up](images/navigation-mockup.png)
 
 ### 3. **Content Sections**
    - Each section (Summary, Skills, Education, Experience) is visually separated to maintain clarity.
    - The **Summary** section highlights key strengths, while **Skills** details my technical knowledge.
    - The **Education** and **Work Experience** sections include details about my academic background and job roles, with the dates right-aligned for easy scanning.
+   - **Mock-up Screenshot**:
+     ![Content Section Mock-up](images/content-mockup.png)
 
 ### 4. **Footer**
    - The footer includes a link to my [LinkedIn Profile](https://www.linkedin.com/in/chris-mugabo/) and copyright information.
+   - **Mock-up Screenshot**:
+     ![Footer Mock-up](images/footer-mockup.png)
 
 ---
 
@@ -93,8 +101,11 @@ The footer provides a link to my **LinkedIn profile** for easy connection and fe
 - Developed by **Chris Mugabo**
 - HTML & CSS design following a minimalist and modern approach.
 - Fonts sourced from [Google Fonts](https://fonts.google.com/).
+- **Mock-up Screenshots**:
+    - Header, Navigation, Content, and Footer mock-ups are included to demonstrate the design.
 
 ---
 
 Feel free to explore the website, and thank you for visiting my portfolio!
+
 
