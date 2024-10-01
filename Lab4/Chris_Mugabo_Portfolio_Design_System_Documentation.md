@@ -1,34 +1,100 @@
- # Chris Mugabo's Portfolio Design System Documentation
+ # Chris Mugabo's Portfolio
 
-This documentation provides an overview of the design system for my portfolio project. It includes colors, typography, components, and layouts.
+Welcome to my portfolio! This project showcases my technical skills, education, and work experience. Below is a detailed breakdown of the design and structure of my portfolio website.
 
-## 1. Color Palette
-- **Primary Color:** `#007BFF`
-- **Text Color:** `#333`
-- **Background Color:** `#FFFFFF`
-- **Accent Color:** `#444`
+## Table of Contents
 
-## 2. Typography
-- **Body Text:** `"Arial", sans-serif`
-- **Headers:** `'Helvetica Neue', sans-serif`
+1. [Design Overview](#design-overview)
+2. [Color Palette](#color-palette)
+3. [Typography](#typography)
+4. [Components and Layout](#components-and-layout)
+5. [Sections](#sections)
+6. [Footer](#footer)
+7. [Credits](#credits)
 
-## 3. Components and Layout
+---
 
-### Header
-- **Design:** Centered text with contact information.
-- **Mock-up Screenshot:** ![Header Mock-up](link_to_your_screenshot)
+## Design Overview
 
-### Navigation
-- **Design:** Horizontal layout with clear text links.
-- **Mock-up Screenshot:** ![Nav Mock-up](link_to_your_screenshot)
+The portfolio follows a clean, minimalist design that prioritizes readability and user experience. The color palette and typography are carefully selected to convey professionalism while maintaining a friendly and approachable tone. The structure is easy to navigate, with a clear header, navigation bar, content sections, and footer.
 
-### Content
-- **Design:** Clear sections for summary, skills, education, and experience.
-- **Mock-up Screenshot:** ![Content Mock-up](link_to_your_screenshot)
+---
 
-### Footer
-- **Design:** Centered text with links to social media and contact info.
-- **Mock-up Screenshot:** ![Footer Mock-up](link_to_your_screenshot)
+## Color Palette
 
-## Conclusion
-This documentation serves as a reference for the design system used in my portfolio project, aiming for consistency and clarity.
+The website uses a modern color scheme that emphasizes contrast and clarity:
+
+- **Primary Color**: `#2d3032` (Dark Gray)
+- **Text Color**: `#e8ecf1` (Stylish Blue for links)
+- **Background Color**: `#F5F5F5` (Light Gray)
+- **Accent Color**: `#292423` (Dark Orange)
+
+---
+
+## Typography
+
+The website uses the **Poppins** font family throughout the design to maintain a modern and clean look:
+
+- **Body Text**: 'Poppins', sans-serif
+- **Header Text**: 'Poppins', sans-serif, bold for emphasis
+
+---
+
+## Components and Layout
+
+### 1. **Header**
+   - The header includes my name, address, email, and phone number.
+   - The background color is dark gray, with white text for better contrast.
+   - All content is centered for a balanced and organized look.
+
+### 2. **Navigation Bar**
+   - The navigation bar contains links to important sections like Summary, Skills, Education, and Experience.
+   - It has a dark gray background and white text for easy visibility.
+   - Links change style on hover to enhance user interaction.
+
+### 3. **Content Sections**
+   - Each section (Summary, Skills, Education, Experience) is visually separated to maintain clarity.
+   - The **Summary** section highlights key strengths, while **Skills** details my technical knowledge.
+   - The **Education** and **Work Experience** sections include details about my academic background and job roles, with the dates right-aligned for easy scanning.
+
+### 4. **Footer**
+   - The footer includes a link to my [LinkedIn Profile](https://www.linkedin.com/in/chris-mugabo/) and copyright information.
+
+---
+
+## Sections
+
+### 1. **Summary**
+   A brief overview of my professional background, showcasing my skills in programming, software development, and communication.
+
+### 2. **Technical Skills & Knowledge**
+   This section lists the programming languages and tools I'm proficient in, including:
+   - **Languages**: Java, Python, C++
+   - **Web Development**: HTML, CSS, JavaScript
+   - **Database Management**: SQL
+   - **Graphic Design**: Adobe Photoshop
+
+### 3. **Education**
+   This section highlights my academic journey, including my current program at **Algonquin College** and my previous studies at **Trent University**. Details about relevant courses, projects, and achievements are provided.
+
+### 4. **Work Experience**
+   This section outlines my work experience, including roles like **Kitchen Assistant** and **Visitor Insights Coordinator**. Each job includes responsibilities and accomplishments, with a clear focus on relevant skills and achievements.
+
+---
+
+## Footer
+
+The footer provides a link to my **LinkedIn profile** for easy connection and features copyright information.
+
+---
+
+## Credits
+
+- Developed by **Chris Mugabo**
+- HTML & CSS design following a minimalist and modern approach.
+- Fonts sourced from [Google Fonts](https://fonts.google.com/).
+
+---
+
+Feel free to explore the website, and thank you for visiting my portfolio!
+
