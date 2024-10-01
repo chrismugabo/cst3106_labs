@@ -1,41 +1,31 @@
-/* styles.css */
-
-/* Reset some default styles */
-body, h1, h2, h3, p {
+body {
+    font-family: "Arial", sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: #F5F5F5; /* Light grey background for better contrast */
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #FFFFFF;
-    color: #333;
-}
-
-/* Header styles */
 header {
-    background-color: #F5F5F5;
+    background-color: #007BFF; /* Attractive blue color */
+    color: white;
     text-align: center;
     padding: 20px;
 }
 
-header h1 {
-    color: #007BFF;
-}
-
-/* Navigation styles */
 nav {
-    background-color: #444;
+    background-color: #FF5722; /* Attractive orange color for the nav bar */
 }
 
 nav ul {
-    list-style: none;
-    padding: 10px;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    margin: 0 15px;
 }
 
 nav ul li a {
@@ -43,26 +33,31 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* Main content styles */
 main {
     padding: 20px;
 }
 
-section {
-    margin-bottom: 20px;
+h2, h3 {
+    color: #333;
 }
 
-h2 {
-    border-bottom: 2px solid #007BFF;
-    padding-bottom: 5px;
+.education-item, .work-item {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer styles */
+.date {
+    float: right; /* Right-align the dates */
+    font-weight: normal;
+    color: #666;
+}
+
 footer {
-    background-color: #F5F5F5;
     text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    padding: 20px;
+    background-color: #333;
+    color: white;
 }
