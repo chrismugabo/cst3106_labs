@@ -1,0 +1,87 @@
+body {
+    font-family: 'Poppins', sans-serif; /* Apply the stylish font to the body */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5; /* Light grey background for better contrast */
+}
+ 
+
+header {
+    background-color: #2d3032; /* Attractive dark color */
+    color: white;
+    text-align: center;
+    padding: 10px; /* Reduced padding */
+}
+
+h1 {
+    font-size: 24px; /* Adjusted font size for the header */
+    margin: 0; /* Remove default margin */
+}
+
+p {
+    font-size: 14px; /* Adjusted font size for paragraph text */
+    margin: 0; /* Remove default margin */
+}
+
+/* Style for links */
+a {
+    color: #e8ecf1; /* Stylish blue color for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: 600; /* Bold font for links */
+}
+
+a:hover {
+    text-decoration: underline; /* Add underline on hover for emphasis */
+}
+
+
+
+nav {
+    background-color: #292423; /* Attractive orange color for the nav bar */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+.education-item, .work-item {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.date {
+    float: right; /* Right-align the dates */
+    font-weight: normal;
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
