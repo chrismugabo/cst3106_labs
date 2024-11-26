@@ -9,7 +9,7 @@ function rollDice() {
         // Display the random number on the dice
         $("#dice").text(randomNumber);
 
-        // Remove the animation class
+        // Remove the animation class 
         $("#dice").removeClass("rolling");
     }, 1000); // Delay matches the animation duration
 }
