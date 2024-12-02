@@ -1,16 +1,15 @@
-# Hospital Triage Design Documentation
+ # Hospital Triage Design Documentation
 
 ## Overview
-The Hospital Triage App is designed to streamline emergency room operations by managing user injury reports and prioritizing them for admin review. This design system outlines the visual and functional components of the app, ensuring a consistent and user-friendly experience.
+The **Hospital Triage App** is a web-based application designed to streamline emergency room operations by managing patient records, estimating wait times, and prioritizing injury severity for efficient review by administrators. This document outlines the visual and functional components of the app, ensuring a consistent, user-friendly, and responsive design.
 
 ---
 
 ## Fonts
 
 ### Fonts Used
-- **Headings**: `'Montserrat', sans-serif`
-- **Subheadings**: `'Roboto Slab', serif`
-- **Body Text**: `'Open Sans', sans-serif`
+- **Headings**: `'Roboto', sans-serif`
+- **Subheadings and Body Text**: `'Open Sans', sans-serif`
 
 ### Font Weights
 - **Headings**: Bold (700)
@@ -18,30 +17,23 @@ The Hospital Triage App is designed to streamline emergency room operations by m
 - **Body Text**: Regular (400)
 
 ### Rationale
-The chosen fonts provide a clean and modern look while ensuring readability and accessibility. The contrast between sans-serif and serif fonts adds a professional aesthetic, suitable for a hospital app.
+The selected fonts provide a clean, modern aesthetic with high readability and accessibility. The sans-serif fonts are professional and align with the healthcare industry standards.
 
 ---
 
 ## Colour Palette
 
 ### Colour Scheme
-1. **Primary Color**: `#4CAF50` (Green)  
-   Used for buttons and active states to symbolize progress and positivity.
-2. **Secondary Color**: `#FF5722` (Red)  
-   Highlights critical information, such as urgent triage cases.
-3. **Background Color**: `#FAFAFA` (Light Gray)  
-   Maintains a neutral backdrop for content.
-4. **Text Color**: `#212121` (Dark Gray)  
+1. **Primary Color**: `#005a87` (Blue)  
+   Represents trust and reliability, used for headers and primary actions.
+2. **Secondary Color**: `#4CAF50` (Green)  
+   Symbolizes progress and success, used for buttons and positive messages.
+3. **Alert Color**: `#FF5722` (Red)  
+   Highlights critical information and error messages.
+4. **Background Color**: `#FAFAFA` (Light Gray)  
+   Creates a neutral and clean background for content.
+5. **Text Color**: `#333333` (Dark Gray)  
    Ensures high contrast and readability.
-
-### Visual Palette
-- ![#4CAF50](https://via.placeholder.com/15/4CAF50/000000?text=+) **Green**: `#4CAF50`
-- ![#FF5722](https://via.placeholder.com/15/FF5722/000000?text=+) **Red**: `#FF5722`
-- ![#FAFAFA](https://via.placeholder.com/15/FAFAFA/000000?text=+) **Light Gray**: `#FAFAFA`
-- ![#212121](https://via.placeholder.com/15/212121/000000?text=+) **Dark Gray**: `#212121`
-
-### Rationale
-The green and red colors are chosen for their intuitive meanings (go vs. stop) in emergency contexts, while the light gray and dark gray colors ensure a clean and professional interface.
 
 ---
 
@@ -52,9 +44,9 @@ The green and red colors are chosen for their intuitive meanings (go vs. stop) i
 - **Admin Page Title**: "Hospital Triage - Admin"
 
 #### Design
-- Font: `'Montserrat', sans-serif`, Bold (700)  
-- Size: 32px  
-- Alignment: Centered  
+- **Font**: `'Roboto', sans-serif`, Bold (700)  
+- **Size**: 32px  
+- **Alignment**: Centered  
 
 ---
 
@@ -63,16 +55,17 @@ The green and red colors are chosen for their intuitive meanings (go vs. stop) i
 - **Admin Action Button**: Red (`#FF5722`) with white text.
 
 #### Design
-- Shape: Rounded corners (8px radius)  
-- Size: 44px height, 120px width  
-- Font: `'Open Sans', sans-serif`, Semi-bold (600)  
-- Hover Effect: Slight shadow and darker color tone  
+- **Shape**: Rounded corners (8px radius)  
+- **Size**: 44px height, 120px width  
+- **Font**: `'Open Sans', sans-serif`, Semi-bold (600)  
+- **Hover Effect**: Subtle shadow and darker background tone  
 
 ---
 
 ### Input Fields
-- **Border Color**: Light Gray (`#DDDDDD`), turns Green (`#4CAF50`) on focus.  
-- **Font**: `'Roboto Slab', serif`, Regular (400)  
+- **Border Color**: Light Gray (`#DDDDDD`), turns Blue (`#005a87`) on focus.  
+- **Font**: `'Open Sans', sans-serif`, Regular (400)  
+- **Padding**: 10px  
 
 ---
 
@@ -80,3 +73,64 @@ The green and red colors are chosen for their intuitive meanings (go vs. stop) i
 
 ### Wireframe
 #### User Page
+- **Header**: Includes the app title and a role selector dropdown.
+- **Main Section**: Contains the patient form to check wait times.
+- **Footer**: Displays copyright information.
+
+#### Admin Page
+- **Header**: Includes the app title and a logout button.
+- **Main Section**:
+  - **Patient Table**: Displays patient information (code, name, severity, wait time, arrival time).
+  - **Add Patient Form**: Allows administrators to add new patients.
+  - **Refresh Button**: Reloads the patient queue.
+
+---
+
+## Responsive Design
+
+### Breakpoints
+1. **Desktop (Default)**: Full-width sections with centered content.  
+2. **Tablet (768px)**: Reduced padding; stacked layout for forms and tables.  
+3. **Mobile (600px)**: Full-width content with increased font sizes for readability.
+
+### Adjustments
+- **Buttons**: Stretch to full width on mobile devices.
+- **Table**: Horizontal scrolling enabled for small screens.
+- **Forms**: Input fields stack vertically for easy interaction.
+
+---
+
+## Technical Details
+
+### Functionality
+1. **Admin View**:  
+   - View, add, and delete patients.  
+   - Automatically updates patient wait times upon deletion.  
+
+2. **User View**:  
+   - Enter name and code to fetch estimated wait time.  
+
+### API Integration
+- **Endpoints**:
+  - `/patients` (GET, POST)
+  - `/patients/:id` (DELETE)
+  - `/patients/:code` (GET)
+
+---
+
+## Testing and Validation
+
+- **Cross-Browser Compatibility**: Tested on Chrome, Firefox, and Edge.  
+- **Accessibility**: Follows WCAG standards for color contrast and keyboard navigation.  
+- **Performance**: Optimized queries to ensure smooth operation with high patient loads.  
+
+---
+
+## Future Enhancements
+- **Multilingual Support**: Add translations for French and Spanish.
+- **Authentication**: Role-based access with detailed admin logs.
+- **Data Export**: Ability to export patient data in CSV format.
+
+---
+
+This design system ensures the **Hospital Triage App** remains functional, visually appealing, and user-friendly, facilitating efficient emergency room management.
