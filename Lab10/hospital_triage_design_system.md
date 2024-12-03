@@ -100,15 +100,54 @@ The selected fonts provide a clean, modern aesthetic with high readability and a
 
 ---
 
+## Functionality
+
+### How the App Works for Admin and Patient
+
+#### Admin Perspective
+1. **Login and Access**:
+   - Admins access their portal by logging in using credentials (if authentication is implemented in future enhancements).
+   - Upon successful login, they are redirected to the **Admin Dashboard**.
+
+2. **Dashboard Components**:
+   - **Patient Table**:
+     - Displays the list of all patients with their details: code, name, severity level, wait time, and arrival time.
+     - Automatically updates wait times dynamically based on changes in the queue.
+   - **Add Patient Form**:
+     - Admins can input a new patient’s details (name, severity level, and arrival time).
+     - The system calculates the wait time based on the severity level and other patients in the queue.
+   - **Delete Patient Action**:
+     - Admins can remove a patient from the queue once their case is addressed.
+     - The wait times for other patients are recalculated dynamically to reflect the updated queue.
+   - **Refresh Button**:
+     - Allows admins to manually refresh the patient list to fetch the latest updates from the server.
+
+3. **API Operations**:
+   - Admins can perform CRUD operations using the app's RESTful API:
+     - **GET**: Retrieve the current patient queue.
+     - **POST**: Add a new patient to the queue.
+     - **DELETE**: Remove a patient based on their ID.
+
+#### Patient Perspective
+1. **Access and Interaction**:
+   - Patients access the **User Page** directly without requiring login credentials.
+   - They see a form with input fields for their **name** and **unique patient code**.
+
+2. **Checking Wait Time**:
+   - Patients enter their details (name and code) into the form.
+   - Upon submitting the form, the app sends a **GET request** to the API endpoint `/patients/:code`.
+   - The server responds with the patient’s estimated wait time based on the current queue and their severity level.
+
+3. **User Feedback**:
+   - The app displays the estimated wait time in a clear and user-friendly format.
+   - If the patient code is not found, an error message (styled with the **Alert Color**) informs the user to check their details and try again.
+
+4. **Real-Time Updates**:
+   - The app ensures that the displayed wait time is always up-to-date by retrieving data directly from the server.
+
+---
+
 ## Technical Details
-
-### Functionality
-1. **Admin View**:  
-   - View, add, and delete patients.  
-   - Automatically updates patient wait times upon deletion.  
-
-2. **User View**:  
-   - Enter name and code to fetch estimated wait time.  
 
 ### API Integration
 - **Endpoints**:
